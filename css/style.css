@@ -1,0 +1,267 @@
+:root {
+    --black: #1c1034;
+    --white: #fefeff;
+    --purple: #48487e;
+    --gray: #f6f6f7;
+    --purpleline: #b5b5b4;
+    --font-size: 1.1rem;
+    --font-lora: 'Lora', serif;
+
+}
+
+/* html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+} */
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: var(--white);
+    font-family: var(--font-lora);
+    font-size: var(--font-size);
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-family: var(--font-lora);
+    color: var(--black);
+}
+
+nav {
+    -webkit-box-shadow:0px 1px 4px var(--purpleline);
+    -moz-box-shadow:0px 1px 4px var(--purpleline);
+    box-shadow:0px 1px 4px var(--purpleline);
+    position: fixed;
+    margin-left: -10%;
+    top: 0;
+    width: 100%;
+    background-color: var(--white);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0 4rem;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+nav li {
+    margin-top: 4px;
+    border: 0;
+    width: auto;
+    text-align: center;
+    display: inline-block;
+}
+
+nav a {
+    /* border: 1px solid red; */
+    text-decoration: none;
+    color: var(--purple);
+    margin: 0.8rem 1.5rem;
+    padding: 0rem;
+    display: block;
+}
+
+nav a:hover {
+    color: var(--black);
+    text-decoration: underline;
+}
+
+nav .navlogo {
+    margin: 0 auto 0 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.navlogo a:hover {
+    text-decoration: none;
+}
+
+.material-symbols-outlined {
+    font-size: 125%;
+}
+
+/* Section Home */
+section  {
+    margin-top: 5rem;
+    padding: 6rem;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 4rem;
+    color: var(--purple);
+}
+
+.home p {
+    font-size: var(--font-size);
+    color: var(--black);
+}
+
+.home_botton {
+    margin-top: 2.5rem;
+}
+
+.home a {
+    border: 1px solid rebeccapurple;
+    padding: 1rem;
+    text-decoration-line: none;
+    color: var(--white);
+    background-color: var(--purple);
+    border-radius: 3px;
+}
+
+.home a:hover {
+    background-color: var(--black);
+}
+
+/* Section Home end */
+
+/* backgroundImage */
+
+.slide-container img {
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+.slider-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow-x: scroll;
+  
+    /* Vamos a añadir esto 👇 */
+    scroll-snap-type: x mandatory;
+}
+  
+.slider-container img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+  
+    /* Vamos a añadir esto 👇 */
+    scroll-snap-align: center;
+}
+
+/* Background Imagen End */
+
+/* Cites */
+
+.cites {
+    /* border: 1px solid red; */
+    margin: 5rem auto;
+    background-color: var(--gray);
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.cites blockquote {
+    width: 25%;
+    display: inline-block;
+    text-align: justify;
+    color: var(--black);
+    font-size: var(--font-size);
+}
+
+.cites img {
+    width: 20%;
+    
+}
+
+.cites a {
+    margin-top: 0;
+    text-decoration: none;
+    color: var(--purple);
+    font-weight: bold;
+}
+
+.cites a:hover {
+    color: var(--black);
+    text-decoration: underline;
+}
+
+/* Cites End */
+
+/* Location */
+
+.location {
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.location h3 {
+    margin: 2rem 0;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+/* Location End */
+
+/* Footer */
+
+footer {
+    color: var(--purple);
+    border-top: 1.5px solid var(--purpleline);
+    margin: 0 auto;
+    font-size: 0.8rem;
+}
+
+footer div  {
+    width: 30%;
+    margin: 0 1rem;
+    display: inline-block;
+}
+
+.social {
+    margin-top: 0.5rem;
+    padding: 0;
+}
+
+.social ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social img {
+    width: 70%;
+}
+
+.social img:hover {
+    width: 75%;
+}
+
+.info {
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    margin: 0.3rem;
+    padding: 0;
+    text-align: center;
+}
+
+.logo img {
+    width: 40%;
+}
+/* Footer End */
